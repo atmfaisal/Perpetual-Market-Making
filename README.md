@@ -117,23 +117,28 @@ Set tighter ask spreads and wider bid spreads so that you are holding less of th
 https://hummingbot.io/en/academy/basic-concepts-of-crypto-trading/
 
 (8)
+```
 Parameter:    minimum_spread
 Prompt:        At what minimum spread should the bot automatically cancel orders?
 >>>        -100
+```
 
 If the spread of any active order fall below this param value, it will be automatically cancelled.
 
 
 (9)
+```
 Prompt:    How often do you want to cancel and replace bids and asks (in seconds)?
 Parameter:    order_refresh_time
 >>>        120
-
+```
 
 (10)
+```
 Parameter:    order_refresh_tolerance_pct
 Prompt:        Enter the percent change in price needed to refresh orders at each cycle
 >>>        
+```
 
 The spread (from mid price) to defer order refresh process to the next cycle.
 
@@ -144,9 +149,11 @@ Prompt:        What is the amount of [base_asset] per order?
 
 
 (12)
+```
 Parameter:    long_profit_taking_spread
 Prompt:        At what spread from the entry price do you want to place a short order to reduce position?
 >>>        
+```
 
 Short Position:
 Shorting (or short selling) means selling an asset in the hopes of rebuying it later at a lower price. A trader who enters a short position expects the asset’s price to decrease, meaning that they are “bearish” on that asset.
@@ -154,18 +161,22 @@ Shorting (or short selling) means selling an asset in the hopes of rebuying it l
 
 
 (13)
+```
 Parameter:    short_profit_taking_spread
 Prompt:        At what spread from the position entry price do you want to place a long order to reduce position?
 >>>        
+```
 
 Long Position:
 The opposite of a short position is a long position, where a trader buys an asset in the hopes of selling it later at a higher price.
 
 
 (14)
+```
 Parameter:    stop_loss_spread
 Prompt:        At what spread from position entry price do you want to place stop_loss order?
 >>>        
+```
 
 The Stop Order on Binance Futures is a combination of stop-loss and take-profit orders. The system will decide if an order is a stop-loss order or a take-profit order based on the price level of trigger price against the last price or mark price when the order is placed.
 
@@ -176,69 +187,86 @@ Binance uses Mark Price as a trigger for liquidation and to measure unrealized p
 
 
 (15)
+```
 Parameter:    time_between_stop_loss_orders
 Prompt:        How much time should pass before refreshing a stop loss order that has not been executed? (in seconds)
 >>>        
+```
 
 (16)
+```
 Parameter:    stop_loss_slippage_buffer
 Prompt:    How much buffer should be added in stop loss orders' price to account for slippage (Enter 1 for 1%)?
 >>>        
+```
 
 (17)
+```
 Parameter:    price_ceiling
 Prompt:        Enter the price point above which only sell orders will be placed
-
 >>>        
+```
 
 Place only sell orders when mid price goes above this price.
 
 
 (18)
+```
 Parameter:    price_floor
 Prompt:        Enter the price below which only buy orders will be placed
 >>>        
+```
 
 Place only buy orders when mid price falls below this price.
 
 (19)
+```
 Parameter:    order_levels
 Promt:        How many orders do you want to place on both sides?
 >>>        
+```
 
 The number of order levels to place for each side of the order book.
 
 
 (20)
+```
 Parameter:    order_level_amount
 Promt:        How much do you want to increase or decrease the order size for each additional order?
 >>>        
+```
 
 The size can either increase(if set to a value greater than zero) or decrease (if set to a value less than zero) for subsequent order levels after the first level.
 
 
 (21)
+```
 Parameter:    order_level_spread
 Promt:        Enter the price increments (as percentage) for subsequent orders?
 >>>        
+```
 
 The incremental spread increases for subsequent order levels after the first level.
 
 (22)
+```
 Parameter:    filled_order_delay
 Promt:        How long do you want to wait before placing the next order if your order gets filled (in seconds)?
 >>>        
+```
 
 How long to wait before placing the next set of orders in case at least one of your orders gets filled.
 
 (23)
+```
 Parameter:    order_optimization_enabled
 Promt:        Do you want to enable best bid ask jumping? (Yes/No)
 >>>        
+```
 
 Allows your bid and ask order prices to be adjusted based on the current top bid and ask prices in the market.
 
-
+(24)
 Promt:        How deep do you want to go into the order book for calculating the top ask, ignoring dust orders on the top (expressed in base asset amount)?
 Parameter:    ask_order_optimization_depth
 >>>        
