@@ -266,74 +266,78 @@ Promt:        Do you want to enable best bid ask jumping? (Yes/No)
 
 Allows your bid and ask order prices to be adjusted based on the current top bid and ask prices in the market.
 
+
 (24)
-Promt:        How deep do you want to go into the order book for calculating the top ask, ignoring dust orders on the top (expressed in base asset amount)?
+```
 Parameter:    ask_order_optimization_depth
+Promt:        How deep do you want to go into the order book for calculating the top ask, ignoring dust orders on the top (expressed in base asset amount)?
 >>>        
+```
 
 The depth in base asset amount to be used for finding top bid ask.
         
-
-Promt:        How deep do you want to go into the order book for calculating the top bid, ignoring dust orders on the top (expressed in base asset amount)?
+(25)
+```
 Parameter:    bid_order_optimization_depth
+Promt:        How deep do you want to go into the order book for calculating the top bid, ignoring dust orders on the top (expressed in base asset amount)?
 >>>        
+```
 
 The depth in base asset amount to be used for finding top bid.
 
- Promt:        Which price source to use? (current_market/external_market/custom_api)
+(26)
+```
 Parameter:    price_source
+Promt:        Which price source to use? (current_market/external_market/custom_api)
 >>>        
+```
 
-Promt:        Which price type to use? (mid_price/last_price/last_own_trade_price/best_bid/best_ask)
+(27)
+```
 Parameter:    price_type
+Promt:        Which price type to use? (mid_price/last_price/last_own_trade_price/best_bid/best_ask)
 >>>        
+```
 
 https://hummingbot.io/en/blog/2020-11-commands-and-config-price-source
 
 
-
-Promt:        Enter external price source connector name or derivative name
+(28)
+```
 Parameter:    price_source_derivative
+Promt:        Enter external price source connector name or derivative name
 >>>        
+```
 
            
-   
-Promt:        Enter the token trading pair on [external_market]
+(29)
+```
 Parameter:    price_source_market
+Promt:        Enter the token trading pair on [external_market]
 >>>        
+```
 
-Promt:        Enter pricing API URL
+
+(30)
+```
 Parameter:    price_source_custom_api
+Promt:        Enter pricing API URL
 >>>        
+```
 
-Promt:        Enter custom API update interval in second (default: 5.0, min: 0.5)
+(31)
+```
 Parameter:    custom_api_update_interval
+Promt:        Enter custom API update interval in second (default: 5.0, min: 0.5)
 >>>        
+```         
 
-
-            
-
-   
-Promt:        
+(32)
+```
 Parameter:    order_override
+Promt:        
 >>>                
-                 
-                
-          
-          
-          
-  
-
-
-                
-                  
-     
-         
-     
-  
-              
-
-
+```              
 
 
 Concepts:
@@ -344,4 +348,3 @@ Inventory risk is the probability a market maker can't find buyers for his inven
 
 Link:
 A Complete Guide to Cryptocurrency Trading for Beginners
-
