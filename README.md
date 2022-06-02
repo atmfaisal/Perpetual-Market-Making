@@ -347,4 +347,4 @@ Inventory risk is the probability a market maker can't find buyers for his inven
 
 
 Link:
-A Complete Guide to Cryptocurrency Trading for Beginners
+[A Complete Guide to Cryptocurrency Trading for Beginners](https://academy.binance.com/en/articles/a-complete-guide-to-cryptocurrency-trading-for-beginners)
